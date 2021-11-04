@@ -1,20 +1,14 @@
-function writeCards(arrayOfStrings, eventName){
-    const holdingArray = [];
-    for (let i = 0; i < arrayOfStrings.length; i++){
-        holdingArray.push(`Thank you, ${arrayOfStrings[i]}, for the wonderful ${eventName} gift!`)
-        console.log(i)
+function writeCards(array, eventName){
+    const holdingArray = []
+    for (let i=0; i < array.length; i++) {
+        holdingArray[i] = `Thank you, ${array[i]}, for the wonderful ${eventName} gift!`;
     }
     return holdingArray
 }
-const names = ['Jim', 'Larry', 'Nandini']
-const Christmas = `Christmas`
-console.log(writeCards(names, Christmas))
 
-
-function countDown(x) {
-    
-    while (x > -1) {
-        console.log(x--)
+function countDown(num) {
+   let myBoyCarlos = num
+    while (myBoyCarlos >= 0) {
+        console.log(myBoyCarlos--)
     }
 }
-countDown(10)
